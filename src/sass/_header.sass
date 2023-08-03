@@ -1,0 +1,79 @@
+.header
+	width: 100%
+	height: 79px
+	background-color: #43adff
+
+.header_promo
+	display: flex
+	justify-content: space-between
+	padding: 18px 16px 17px 16px
+
+.logo
+	display: block
+	max-width: 100%
+	height: 39px
+
+.menu
+	display: flex
+	justify-content: space-between
+	margin: 8px -257px 0 0
+	list-style-type: none
+	&_link
+		font-family: Poppins
+		font-size: 13px
+		font-weight: 400
+		color: #444
+		text-decoration: none
+	&_item
+		margin-right: 28px
+		&:nth-child(4)
+			margin-right: 34px
+		&:last-child
+			margin-right: 0
+	&_btn
+		display: flex
+		justify-content: space-between
+	&_button
+		position: relative
+	&_black
+		margin-right: 20px
+		margin-left: 40px
+		width: 143px
+		height: 44px
+		border-radius: 6px
+		border: none
+		background-color: #575445
+		font-family: Poppins
+		font-size: 16px
+		font-weight: 400
+		color: #fff
+		&:hover
+			background-color: #7a7a7a
+	&_cart
+		position: relative
+		margin-right: 0
+		margin-left: 0
+		&::before
+			content: ''
+			width: 17px
+			height: 17px
+			position: absolute
+			top: 50%
+			left: 18px
+			transform: translateY(-50%)
+			background: url('../icons/basket.svg') center (center / cover) no-repeat
+	&_round
+		position: absolute
+		top: 50%
+		right: 18px
+		transform: translateY(-50%)
+		width: 20px
+		height: 18px
+		background: #fff
+		border-radius: 9px
+	&_zero
+		font-family: Poppins
+		font-weight: 400
+		font-size: 12px
+		text-align: center
+		color: #575445
